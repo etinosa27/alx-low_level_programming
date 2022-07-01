@@ -8,13 +8,19 @@
  */
 int main(void)
 {
-	int d;
-	char low;
+	int n = '0';
+	int a_to_f = 'a';
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	for (low = 'a'; low <= 'f'; low++)
-		putchar(low);
-		putchar('\n');
+	while (n <= '9')
+	{
+		putchar(n);
+		n++;
+	}
+	while (a_to_f <= 'f')
+	{
+		putchar(a_to_f);
+		a_to_f++;
+	}
+	putchar('\n');
 	return (0);
 }
