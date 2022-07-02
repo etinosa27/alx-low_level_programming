@@ -35,16 +35,15 @@ for (j = 48; j < 58; j++)
 			putchar(l);
 			if (counter1 != 99)
 			{
-				putchar(44);
-				putchar(32);
+			putchar(44);
+			putchar(32);
 			}
 			else
 			{
-				putchar(10);
-			}
-		}
-
-	}
+			putchar(10);
+}
+}
+}
 }
 }
 return (0);
