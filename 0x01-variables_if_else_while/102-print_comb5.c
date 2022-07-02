@@ -7,34 +7,45 @@
 */
 int main(void)
 {
-int tens;
-int ones;
-int t;
-int o;
+int i;
+int j;
+int counter1;
+int k;
+int l;
+int counter2;
+counter1 = 0;
 
-for (tens = '0'; tens <= '9'; tens++)
+for (i = 48; i < 58; i++)
 {
-for (ones = '0'; ones <= '9'; ones++)
+if (counter1 == 99)
+	break;
+for (j = 48; j < 58; j++)
 {
-for (t = tens; t <= '9'; t++)
-{
-for (o = ones + 1; o <= '9'; o++)
-{
-putchar(tens);
-putchar(ones);
-putchar(' ');
-putchar(t);
-putchar(o);
-if (!((tens == '9' && ones == '8') && (t == '9' && o == '9')))
-{
-putchar(',');
-putchar(' ');
+	counter2 = counter1 + 1;
+	counter1++;
+	for (k = (counter2 / 10) + 48; k <= 57; k++)
+	{
+		for (l = (counter2 % 10) + 48; l <= 57; l++)
+		{
+			counter2++;
+			putchar(i);
+			putchar(j);
+			putchar(32);
+			putchar(k);
+			putchar(l);
+			if (counter1 != 99)
+			{
+				putchar(44);
+				putchar(32);
+			}
+			else
+			{
+				putchar(10);
+			}
+		}
+
+	}
 }
 }
-o = '0';
-}
-}
-}
-putchar('\n');
 return (0);
 }
