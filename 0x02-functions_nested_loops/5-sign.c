@@ -13,17 +13,17 @@ int test;
 if (n > 0)
 {
 	test = 1;
-	_purchar('+');
+	_putchar('+');
 }
 else if (n == 0)
 {
 	test = 0;
-	_purchar(0);
+	_putchar(0);
 }
 else
 {
 	test = -1;
-	_purchar('-');
+	_putchar('-');
 }
 
 return (test);
