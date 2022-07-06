@@ -31,12 +31,12 @@ void jack_bauer(void)
 			m1 = 0;
 			while (m1 <= 9)
 			{
-				_purchar('0' + h2);
-				_purchar('0' + h1);
-				_purchar(':');
-				_purchar('0' + m2);
-				_purchar('0' + m1);
-				_purchar('\n');
+				_putchar('0' + h2);
+				_putchar('0' + h1);
+				_putchar(':');
+				_putchar('0' + m2);
+				_putchar('0' + m1);
+				_putchar('\n');
 				m1++;
 			}
 			m2++;
