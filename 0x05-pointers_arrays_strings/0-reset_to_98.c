@@ -10,21 +10,5 @@
 
 void reset_to_98(int *n)
 {
-	printf("Value of 'n' : %p\n", n);
-	printf("Address of 'm' : %p\n", &n);
 	*n = 98;
-}
-	int main(void)
-{
-	int m;
-	int *p;
-
-	m = 402;
-	p = &m;
-	printf("%d\n", m);
-	printf("%p\n", p);
-	printf("%p\n", &m);
-	reset_to_98(p);
-	printf("%d\n", m);
-	return (0);
 }
