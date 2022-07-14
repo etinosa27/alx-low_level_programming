@@ -18,4 +18,4 @@ void reverse_array(int *a, int n)
 		*(a + end) = tmp;
 		beg++, end--;
 	}
-
+}
