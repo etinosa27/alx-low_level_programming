@@ -1,0 +1,5 @@
+/* This will ignore the below fies */
+
+*~
+*.o
+*.c
