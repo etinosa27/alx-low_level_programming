@@ -51,7 +51,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog1->age = age;
 
 /* make copies of struct members and validate, else free on error */
-	/* set values of struct members to copies of arguments or set to NULL */
+/* set values of struct members to copies of arguments or set to NULL */
 	if (name != NULL)
 	{
 		copy_of_name = malloc(len(name) + 1);
